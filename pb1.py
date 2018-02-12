@@ -23,7 +23,7 @@ u = {}
 for tweet in twitter.tweets:
 	if tweet.HasField("insert"):
 		if tweet.is_delete == 0:
-			if tweet.insert.uid in user.keys():
+			if tweet.insert.uid in u.keys():
 				u[tweet.insert.uid]+=1
 			else:
 				u[tweet.insert.uid]=1
