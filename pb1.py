@@ -29,7 +29,7 @@ for tweet in twitter.tweets:
 				u[tweet.insert.uid]=1
 
 for i in range(5):
-	for key, value in sorted(user.iteritems(), key = lambda (k,v):(v,k), reverse = True):
+	for key, value in sorted(u.iteritems(), key = lambda (k,v):(v,k), reverse = True):
 		print "%s:%s"%(key, value)
 		i += 1
 		if i ==5:
