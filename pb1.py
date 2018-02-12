@@ -31,8 +31,4 @@ for tweet in twitter.tweets:
 for i in range(5):
 	for key, value in sorted(u.iteritems(), key = lambda (k,v):(v,k), reverse = True):
 		print "%s:%s"%(key, value)
-		i += 1
-		if i ==5:
-			break
-
 f.close()
